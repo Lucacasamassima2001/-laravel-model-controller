@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
-        <h1>Questa era la mia lista di film.</h1>
+    <div class="container mt-4">
+        <h2 class="py-3">Questa è la mia lista di film.</h2>
     </div>
 </footer>

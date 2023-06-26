@@ -1,12 +1,14 @@
 @extends('layouts.base')
 
 @section('movies')
-    <h2>I miei film...</h2>
+<h2 class="py-3 text-light">I miei film...</h2>
+
+<div class="container-big d-flex justify-content-center">
     <div class="row g-3 row-cols-3 d-flex justify-content-center">
         @foreach($ArrMovies as $Movie)
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                {{-- <img src="..." class="card-img-top" alt="..."> --}}
                 <div class="card-body">
                   <h5 class="card-title">{{$Movie->title}}</h5>
                   <h6>{{$Movie->original_title}}</h6>
@@ -19,4 +21,5 @@
         </div>
         @endforeach
     </div>
+</div>
 @endsection
